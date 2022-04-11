@@ -7,82 +7,69 @@ body {
   background-image: url(./assets/bg-triangles.png);
   background-repeat: no-repeat;
 }
-#app {
+.content{
+  display: flex;
+}
+.content-rigth{
   width: 100%;
-  position: relative;
 }
-#app :nth-child(2),
-#app :nth-child(3),
-#app :nth-child(4),
-#app :nth-child(5) {
-  max-width: 50%;
+.content-left{
+  margin-right: 20px;
 }
-#app :nth-child(6) {
-  color: #0d4073;
-  border-radius: 15px 15px 0 0;
-  padding-top: 30px;
-  padding-bottom: 15px;
-  top: 60px;
-}
-#app :nth-child(7) {
-  padding-bottom: 35px;
-  top: 150px;
-}
-#app :nth-child(6),
-#app :nth-child(7) {
+.data{
   background-color: #79a6d2;
   text-align: center;
   margin-bottom: 0;
-  position: absolute;
   width: 100%;
-  max-width: 46%;
-  right: 0;
+  border-radius: 15px 15px 0 0;
 }
-
-#app :nth-child(8) {
+.data h2 {
   color: #0d4073;
-  padding-top: 60px;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.data div {
   padding-bottom: 35px;
-  top: 200px;
 }
-#app :nth-child(9) {
-  padding-bottom: 60px;
-  font-size: 38px;
-  top: 320px;
+.content-results{
+  display: flex;
 }
-#app :nth-child(8),
-#app :nth-child(9) {
+.results{
   background-color: #a5d321;
   text-align: center;
   margin: 0;
-  position: absolute;
-  right: 23%;
   width: 100%;
-  max-width: 23%;
+  max-width: 50%;
 }
-
-#app :nth-child(10) {
+.results h2{
   color: #0d4073;
   padding-top: 60px;
   padding-bottom: 35px;
-  top: 200px;
 }
-#app :nth-child(11) {
-  padding-bottom: 70px;
+.results div {
+  padding-bottom: 60px;
   font-size: 38px;
-  border-radius: 0 0 15px 0;
-  top: 310px;
 }
-#app :nth-child(10),
-#app :nth-child(11) {
+
+.your-results{
   background-color: #c52d96;
   text-align: center;
   margin: 0;
-  position: absolute;
-  right: 0;
   width: 100%;
-  max-width: 23%;
+  max-width: 50%;
+  border-radius: 0 0 15px 0;
 }
+.your-results h2{
+  color: #0d4073;
+  padding-top: 60px;
+  padding-bottom: 35px;
+}
+.your-results div{
+  padding-bottom: 70px;
+  font-size: 38px;
+  
+}
+
 h1 {
   font-weight: normal;
   color: #c9d9e8;
@@ -107,55 +94,7 @@ li::marker {
     background-size: initial;
     background-position-y: top;
   }
-  #app :nth-child(2),
-  #app :nth-child(3),
-  #app :nth-child(4),
-  #app :nth-child(5) {
-    max-width: 100%;
-  }
-  #app :nth-child(6),
-  #app :nth-child(7){
-    position: initial;
-    margin: 0 auto;
-    max-width: 100%;
-  }
-  #app :nth-child(8),
-  #app :nth-child(9){
-    position: relative;
-    top: 0;
-    max-width: 50%;
-    right: inherit;
-  }
-  #app :nth-child(10){
-    max-width: 50%;
-    top: -226px;
-    position: relative;
-    left: 50%;
-  }
-  #app :nth-child(11) {
-    max-width: 50%;
-    top: -236px;
-    position: relative;
-    left: 50%;
-  }
-}
-@media (max-width: 412px) {
-  #app :nth-child(10){
-    top: -254px;
-    padding-bottom: 60px;
-  }
-  #app :nth-child(11) {
-    top: -261px;
-  }
-}
-@media (max-width: 321px) {
-  #app :nth-child(9){
-    padding-bottom: 70px;
-  }
-  #app :nth-child(10){
-    top: -264px;
-  }
-  #app :nth-child(11) {
-    top: -289px;
+  .content{
+    display: block;
   }
 }
