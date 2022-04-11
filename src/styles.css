@@ -12,9 +12,12 @@ body {
 }
 .content-rigth{
   width: 100%;
+  max-width: 50%;
+  font-size: 1.2em;
 }
 .content-left{
   margin-right: 20px;
+  font-size: 1.2em;
 }
 .data{
   background-color: #79a6d2;
@@ -77,15 +80,22 @@ h1 {
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+  font-size: 3em;
 }
 h2 {
   font-weight: normal;
   color: #12ebfe;
+  font-size: 1.5em;
 }
 li::marker {
   color: #12ebfe;
 }
 
+@media (max-width: 850px) {
+  h1{
+    font-size: 2.5em;
+  }
+}
 
 @media (max-width: 768px) {
   h1{
@@ -96,5 +106,8 @@ li::marker {
   }
   .content{
     display: block;
+  }
+  .content-rigth{
+    max-width: 100%;
   }
 }
