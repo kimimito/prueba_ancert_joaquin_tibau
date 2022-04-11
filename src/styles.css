@@ -90,6 +90,7 @@ h1 {
   background-position: right;
   background-repeat: no-repeat;
   background-size: contain;
+  font-size: 3em;
 }
 h2 {
   font-weight: normal;
@@ -99,7 +100,11 @@ li::marker {
   color: #12ebfe;
 }
 
-
+@media (max-width: 850px) {
+  h1{
+    font-size: 2em;
+  }
+}
 @media (max-width: 768px) {
   h1{
     padding-top: 80px;
