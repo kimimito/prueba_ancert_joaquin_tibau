@@ -98,3 +98,64 @@ h2 {
 li::marker {
   color: #12ebfe;
 }
+
+
+@media (max-width: 768px) {
+  h1{
+    padding-top: 80px;
+    background-position-x: left;
+    background-size: initial;
+    background-position-y: top;
+  }
+  #app :nth-child(2),
+  #app :nth-child(3),
+  #app :nth-child(4),
+  #app :nth-child(5) {
+    max-width: 100%;
+  }
+  #app :nth-child(6),
+  #app :nth-child(7){
+    position: initial;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  #app :nth-child(8),
+  #app :nth-child(9){
+    position: relative;
+    top: 0;
+    max-width: 50%;
+    right: inherit;
+  }
+  #app :nth-child(10){
+    max-width: 50%;
+    top: -226px;
+    position: relative;
+    left: 50%;
+  }
+  #app :nth-child(11) {
+    max-width: 50%;
+    top: -236px;
+    position: relative;
+    left: 50%;
+  }
+}
+@media (max-width: 412px) {
+  #app :nth-child(10){
+    top: -254px;
+    padding-bottom: 60px;
+  }
+  #app :nth-child(11) {
+    top: -261px;
+  }
+}
+@media (max-width: 321px) {
+  #app :nth-child(9){
+    padding-bottom: 70px;
+  }
+  #app :nth-child(10){
+    top: -264px;
+  }
+  #app :nth-child(11) {
+    top: -289px;
+  }
+}
